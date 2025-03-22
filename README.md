@@ -1,4 +1,3 @@
-# Smart-Agriculture-System
 # IoT-Based Field Monitoring System
 
 ## Project Overview
@@ -13,54 +12,48 @@ The **IoT-Based Field Monitoring System** is a smart agriculture solution design
 
 ## Technologies Used
 - **Hardware**:
-  - Raspberry Pi with Grove Pi Plus
-  - IoT Sensors (Soil Moisture, Temperature, Humidity)
+  - Raspberry Pi 3B+
+  - Grove Pi Plus Sensor Shield
+  - IoT Sensors (Soil Moisture, Temperature, Humidity, Light Sensor)
+  - 12V DC Solenoid Valve
+  - Grove Relay Module
 - **Software**:
   - Python (for Raspberry Pi)
   - Firebase (Cloud Database & Real-time Sync)
   - Kotlin (Android Development)
   - Grove Pi Libraries (Sensor Integration)
+  - Raspbian OS
+
+## System Architecture
+1. **Sensor Data Collection**: Sensors gather environmental data such as temperature, humidity, and soil moisture.
+2. **Data Transmission**: The Raspberry Pi processes the sensor data and uploads it to Firebase.
+3. **Cloud Storage & Processing**: Firebase stores and synchronizes the data across devices.
+4. **User Interaction**: The Android app fetches and displays real-time data and allows remote irrigation control.
+5. **Automated Irrigation**: Based on predefined thresholds, the system activates or deactivates the irrigation system.
 
 ## Installation & Setup
 ### Hardware Setup:
 1. Connect the IoT sensors to the Raspberry Pi via the Grove Pi Plus.
 2. Ensure all connections are secure and the Raspberry Pi is powered on.
-
-### Software Setup:
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/iot-field-monitoring.git
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Set up Firebase:
-   - Create a Firebase project.
-   - Add Firebase Realtime Database and configure authentication.
-   - Update Firebase credentials in the project files.
-4. Run the IoT data collection script:
-   ```sh
-   python main.py
-   ```
-5. Install and run the Android app for remote monitoring.
-
 ## Achievements
 - Successfully implemented **real-time data synchronization** with Firebase.
 - Ensured **system reliability and performance** through optimized sensor data handling.
 - Improved irrigation efficiency by automating water supply based on real-time sensor readings.
 
+## Testing Methods
+- **Unit Testing**: Verified individual modules (sensor data collection, Firebase integration, UI components).
+- **Integration Testing**: Ensured seamless interaction between the IoT device, cloud, and mobile application.
+- **End-to-End Testing**: Validated real-world scenarios, including sensor data acquisition, irrigation automation, and remote access.
+
 ## Future Enhancements
-- Integration with AI-based predictive analytics for better crop management.
-- Expansion to support multiple farm locations within a single application.
-- Solar-powered system for sustainability and energy efficiency.
+- **Predictive Analytics**: Implement AI models to predict soil moisture trends and optimize irrigation.
+- **Offline Data Processing**: Enable edge computing to function in areas with limited internet access.
+- **Enhanced Mobile App**: Include customizable dashboards, data visualization tools, and smart alerts.
 
 ## Contributors
-- **Your Name** – Developer & Project Lead
-- **Team Members (if any)**
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+- **Harsh Tiwari** – Developer 
+- **Harshad Bobde** – Tester and Setup
+- **Kishan Singh Rathour** – Developer
+- **Parth Bhawsar** – Developer
 ## Contact
-For any queries, reach out to **your.email@example.com** or connect via LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile).
+For any queries, reach out to **ombobde03@gmail.com** or connect via LinkedIn: [Harshad Bobde](https://www.linkedin.com/in/harshad-bobde/).
