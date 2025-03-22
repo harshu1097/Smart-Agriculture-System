@@ -5,6 +5,7 @@ The **IoT-Based Field Monitoring System** is a smart agriculture solution design
 ## Photos 
 ![Setup](photo_1_2025-03-22_14-49-51.jpg)
 ![setup](photo_2_2025-03-22_14-49-51.jpg)
+![setup](photo_3_2025-03-22_14-49-51.jpg)
 ## Features
 - **Real-time Data Monitoring**: Continuously collects data from soil moisture, temperature, and humidity sensors.
 - **Automated Irrigation**: Adjusts water supply based on sensor readings to optimize irrigation.
